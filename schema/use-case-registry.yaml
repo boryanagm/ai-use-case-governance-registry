@@ -1,0 +1,73 @@
+version: "0.1"
+
+use_case:
+  use_case_id: ""
+  title: ""
+  description: ""
+  business_purpose: ""
+
+ownership:
+  requester:
+    name: ""
+    team: ""
+  use_case_owner:
+    name: ""
+    team: ""
+  reviewer:
+    name: ""
+    team: ""
+  approver:
+    name: ""
+    team: ""
+  monitoring_owner:
+    name: ""
+    team: ""
+
+system_context:
+  ai_capability: ""
+  deployment_status: "proposed"
+  deployment_context: ""
+  geography_jurisdiction: []
+  third_party_components: []
+
+affected_parties:
+  intended_users: []
+  affected_persons_groups: []
+
+data_profile:
+  data_categories: []
+  personal_data_involved: false
+  special_category_or_sensitive_data: false
+
+governance_assessment:
+  impact_summary: ""
+  decision_significance: ""
+  human_oversight: ""
+  external_exposure: ""
+  preliminary_risk_classification: ""
+  transparency_relevant: false
+
+control_review:
+  accountability_status: ""
+  documentation_status: ""
+  transparency_status: ""
+  human_oversight_status: ""
+  risk_management_status: ""
+  monitoring_status: ""
+  required_controls: []
+
+governance_decision:
+  status: ""
+  decision_rationale: ""
+  conditions: []
+
+monitoring_review:
+  review_date: ""
+  status_changes: []
+  incidents_issues: []
+  reassessment_triggers: []
+
+record_metadata:
+  created_date: ""
+  last_updated_date: ""
+  source_references: []
