@@ -1,0 +1,88 @@
+title: ""
+use_case_id: ""
+
+status:
+  value: "draft"
+  allowed_values:
+    - draft
+    - in_review
+    - completed
+
+assessment:
+  owner: ""
+  date_started: ""
+  date_completed: ""
+  reviewers: []
+
+system_context:
+  summary: ""
+  intended_purpose: ""
+  deployment_context: ""
+  lifecycle_stage: ""
+  affected_business_processes: []
+
+stakeholders:
+  intended_users: []
+  affected_persons_or_groups: []
+  internal_owners: []
+  external_parties: []
+
+impact_summary:
+  expected_benefits: []
+  potential_harms: []
+  tradeoffs_and_limitations: []
+
+impact_areas:
+  fundamental_rights_and_societal_impact:
+    summary: ""
+    concerns_identified: []
+  safety_and_wellbeing:
+    summary: ""
+    concerns_identified: []
+  fairness_and_bias:
+    summary: ""
+    concerns_identified: []
+  transparency_and_explainability:
+    summary: ""
+    concerns_identified: []
+  privacy_and_data_governance:
+    summary: ""
+    concerns_identified: []
+  security_and_resilience:
+    summary: ""
+    concerns_identified: []
+  human_oversight_and_accountability:
+    summary: ""
+    concerns_identified: []
+
+risk_factors:
+  degree_of_automation: ""
+  decision_influence: ""
+  scale_of_use: ""
+  sensitivity_of_context: ""
+  data_sensitivity: ""
+  dependency_on_third_party_models_or_services: ""
+  notable_uncertainties: []
+
+existing_controls_or_mitigations:
+  - control_name: ""
+    status: ""
+    notes: ""
+
+residual_concerns:
+  - concern: ""
+    rationale: ""
+
+overall_assessment:
+  summary: ""
+  requires_classification_review: true
+  requires_control_review: true
+  requires_escalation: false
+
+evidence_and_references:
+  supporting_documents: []
+  notes: ""
+
+versioning:
+  version: "0.1"
+  last_updated: ""
