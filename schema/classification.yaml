@@ -1,0 +1,68 @@
+title: ""
+use_case_id: ""
+
+status:
+  value: "draft"
+  allowed_values:
+    - draft
+    - in_review
+    - completed
+
+classification_record:
+  owner: ""
+  date_started: ""
+  date_completed: ""
+  reviewers: []
+
+classification_basis:
+  intended_purpose: ""
+  deployment_context: ""
+  affected_domain: ""
+  affected_persons_or_groups: []
+  decision_influence: ""
+  degree_of_automation: ""
+  human_involvement: ""
+  data_and_system_dependencies: []
+
+preliminary_governance_classification:
+  value: ""
+  allowed_values:
+    - minimal_risk_or_limited_governance_attention
+    - requires_further_review
+    - higher_risk_context_possible
+    - prohibited_use_case_concern
+    - classification_unclear
+
+classification_rationale:
+  summary: ""
+  relevant_factors:
+    - ""
+  uncertainties:
+    - ""
+
+ai_act_preliminary_view:
+  summary: ""
+  notes: ""
+  formal_legal_classification_not_performed: true
+
+control_implications:
+  additional_controls_likely_required: false
+  control_review_priority: ""
+  areas_for_control_review:
+    - ""
+
+escalation:
+  escalation_recommended: false
+  escalation_reason: ""
+  functions_to_involve:
+    - ""
+
+decision_traceability:
+  supporting_artifacts:
+    - ""
+  references:
+    - ""
+
+versioning:
+  version: "0.1"
+  last_updated: ""
