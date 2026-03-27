@@ -1,0 +1,106 @@
+title: ""
+use_case_id: ""
+
+status:
+  value: "draft"
+  allowed_values:
+    - draft
+    - in_review
+    - completed
+
+review_record:
+  owner: ""
+  date_started: ""
+  date_completed: ""
+  reviewers: []
+
+review_basis:
+  intended_purpose: ""
+  deployment_context: ""
+  preliminary_governance_classification: ""
+  classification_summary: ""
+
+control_review_summary:
+  summary: ""
+  control_gaps_identified: false
+  escalation_recommended: false
+
+control_areas:
+  governance_and_accountability:
+    applicable: false
+    status: ""
+    notes: ""
+
+  documentation_and_recordkeeping:
+    applicable: false
+    status: ""
+    notes: ""
+
+  human_oversight:
+    applicable: false
+    status: ""
+    notes: ""
+
+  transparency_and_communication:
+    applicable: false
+    status: ""
+    notes: ""
+
+  data_governance:
+    applicable: false
+    status: ""
+    notes: ""
+
+  technical_robustness_and_reliability:
+    applicable: false
+    status: ""
+    notes: ""
+
+  security_and_resilience:
+    applicable: false
+    status: ""
+    notes: ""
+
+  monitoring_and_review:
+    applicable: false
+    status: ""
+    notes: ""
+
+control_status_allowed_values:
+  - not_started
+  - planned
+  - partially_in_place
+  - in_place
+  - not_applicable
+  - unclear
+
+identified_actions:
+  - action: ""
+    owner: ""
+    target_date: ""
+    related_control_area: ""
+    notes: ""
+
+residual_concerns:
+  - concern: ""
+    rationale: ""
+
+escalation:
+  escalation_recommended: false
+  escalation_reason: ""
+  functions_to_involve:
+    - ""
+
+decision_readiness:
+  ready_for_governance_decision: false
+  blockers:
+    - ""
+
+evidence_and_references:
+  supporting_artifacts:
+    - ""
+  notes: ""
+
+versioning:
+  version: "0.1"
+  last_updated: ""
