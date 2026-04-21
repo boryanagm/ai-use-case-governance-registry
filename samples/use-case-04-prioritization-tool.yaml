@@ -1,0 +1,128 @@
+title: "Case Prioritization Tool"
+use_case_id: "use-case-04-prioritization-tool"
+
+status:
+  value: "draft"
+  allowed_values:
+    - draft
+    - in_review
+    - completed
+
+owner:
+  name: "Operations Planning Team"
+  business_function: "Operations"
+
+summary:
+  short_description: "An AI-supported tool that helps internal teams prioritize incoming cases for review based on predefined operational factors and model-generated recommendations."
+  intended_purpose: "Support internal operations by helping teams sort and prioritize work queues more efficiently while keeping final decisions under human control."
+  outputs:
+    - "priority recommendations"
+    - "ranked case queues"
+    - "suggested review order"
+  output_usage: "Staff use the outputs as decision support and are expected to review and confirm priorities before operational action is taken."
+
+deployment_context:
+  environment: "internal operational tool"
+  rollout_stage: "pilot"
+  geographies:
+    - "single geography"
+  intended_users:
+    - "operations staff"
+    - "team leads"
+  affected_persons_or_groups:
+    - "staff using the prioritization tool"
+    - "individuals whose cases are being prioritized"
+    - "teams responsible for follow-up actions"
+
+data_and_dependencies:
+  data_sources:
+    - "internal case management records"
+    - "operational workflow data"
+    - "historical case handling information"
+  personal_data_involved: "yes"
+  sensitive_data_involved: "unclear"
+  third_party_dependencies:
+    - "foundation model provider"
+    - "internal workflow or case management platform"
+
+human_oversight:
+  human_review_expected: true
+  human_can_override_or_ignore_output: true
+  oversight_owner: "Operations Planning Team"
+
+impact_assessment_summary:
+  expected_benefits:
+    - "faster triage of incoming work"
+    - "more consistent first-pass prioritization"
+    - "better allocation of reviewer attention"
+  potential_harms:
+    - "inappropriate prioritization of cases"
+    - "delay or disadvantage caused by flawed rankings"
+    - "overreliance on system-generated priority recommendations"
+    - "reduced visibility into why certain cases were ranked higher or lower"
+  known_limitations:
+    - "recommendations may reflect incomplete case context"
+    - "priority outputs may not capture operational nuance"
+    - "staff review remains necessary before acting on the output"
+
+preliminary_governance_classification:
+  value: "higher_risk_context_possible"
+  rationale: "The tool is intended as internal decision support rather than full automation, but it may materially influence how cases are handled and may affect individuals indirectly through prioritization outcomes. Stronger review is appropriate before any positive governance outcome."
+  ai_act_preliminary_view_note: "This is a preliminary governance classification only and not a formal legal classification under the EU AI Act."
+  escalation_recommended: true
+
+control_review_summary:
+  governance_and_accountability:
+    applicable: true
+    status: "planned"
+    notes: "Ownership is identified, but accountability for overrides, review, and escalation should be documented more clearly."
+  documentation_and_recordkeeping:
+    applicable: true
+    status: "planned"
+    notes: "The use case should be supported by clearer documentation of prioritization purpose and rationale."
+  human_oversight:
+    applicable: true
+    status: "partially_in_place"
+    notes: "Human review is expected, but the quality and consistency of override practice should be reviewed."
+  transparency_and_communication:
+    applicable: true
+    status: "planned"
+    notes: "Internal users should understand that outputs are recommendations and may require explanation of ranking factors."
+  data_governance:
+    applicable: true
+    status: "unclear"
+    notes: "Case data categories, data quality concerns, and any sensitive attributes require further review."
+  technical_robustness_and_reliability:
+    applicable: true
+    status: "planned"
+    notes: "The effect of prioritization errors and model limitations should be documented."
+  security_and_resilience:
+    applicable: true
+    status: "unclear"
+    notes: "Dependencies on internal systems and third-party services should be reviewed."
+  monitoring_and_review:
+    applicable: true
+    status: "planned"
+    notes: "Review triggers should be defined for material changes, recurring issues, or adverse outcomes."
+
+governance_decision:
+  decision_state: "requires_escalation"
+  rationale: "The use case is sufficiently clear for preliminary review, but because it may influence operational prioritization affecting individuals, repository-level approval would be premature without stronger review of impact, data, and oversight."
+  conditions: []
+  escalation_note: "Further review by relevant legal, privacy, compliance, security, or risk functions may be appropriate."
+  next_review_trigger: "Completion of escalation review and updated control assessment"
+
+references:
+  supporting_artifacts:
+    - "questionnaires/intake-questionnaire.md"
+    - "schema/use-case-registry.yaml"
+    - "schema/impact-assessment.yaml"
+    - "schema/classification.yaml"
+    - "schema/control-review.yaml"
+    - "rules/classification-rules.md"
+    - "rules/decision-rules.md"
+  notes: "Sample file for repository illustration only."
+
+versioning:
+  version: "0.1"
+  last_updated: ""

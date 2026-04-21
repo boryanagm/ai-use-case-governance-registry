@@ -1,0 +1,130 @@
+title: "Customer Support Assistant"
+use_case_id: "use-case-03-customer-support-assistant"
+
+status:
+  value: "draft"
+  allowed_values:
+    - draft
+    - in_review
+    - completed
+
+owner:
+  name: "Customer Operations Team"
+  business_function: "Customer Support"
+
+summary:
+  short_description: "An AI assistant that helps customer support agents draft responses to routine customer inquiries and suggest relevant knowledge base content."
+  intended_purpose: "Support customer service operations by improving response efficiency and helping agents identify relevant information during customer interactions."
+  outputs:
+    - "draft responses"
+    - "suggested knowledge base articles"
+    - "recommended response options"
+  output_usage: "Support agents review the outputs before sending a response to a customer."
+
+deployment_context:
+  environment: "internal support tool with customer-facing impact"
+  rollout_stage: "pilot"
+  geographies:
+    - "multiple geographies possible"
+  intended_users:
+    - "customer support agents"
+    - "support team leads"
+  affected_persons_or_groups:
+    - "customers receiving responses"
+    - "support agents using the assistant"
+    - "customer operations teams"
+
+data_and_dependencies:
+  data_sources:
+    - "customer support knowledge base"
+    - "approved internal procedures"
+    - "historical support content"
+    - "customer inquiry text"
+  personal_data_involved: "yes"
+  sensitive_data_involved: "unclear"
+  third_party_dependencies:
+    - "foundation model provider"
+    - "retrieval or search service"
+    - "customer support platform integration"
+
+human_oversight:
+  human_review_expected: true
+  human_can_override_or_ignore_output: true
+  oversight_owner: "Customer Operations Team"
+
+impact_assessment_summary:
+  expected_benefits:
+    - "faster support handling"
+    - "more consistent first-pass responses"
+    - "reduced effort for routine inquiries"
+  potential_harms:
+    - "incorrect or misleading responses sent to customers"
+    - "inappropriate handling of customer information"
+    - "overreliance on generated drafts by agents"
+    - "customer confusion if AI involvement is not communicated appropriately"
+  known_limitations:
+    - "outputs may be incomplete or inaccurate"
+    - "drafts may not reflect the latest policy or case context"
+    - "quality depends on the quality of source content and agent review"
+
+preliminary_governance_classification:
+  value: "higher_risk_context_possible"
+  rationale: "The use case is not fully automated, but it operates in an external-facing support context, involves customer data, and may materially influence communications affecting customers. Stronger review is appropriate before any positive governance outcome."
+  ai_act_preliminary_view_note: "This is a preliminary governance classification only and not a formal legal classification under the EU AI Act."
+  escalation_recommended: true
+
+control_review_summary:
+  governance_and_accountability:
+    applicable: true
+    status: "planned"
+    notes: "Ownership is identified, but accountability and escalation responsibilities should be documented more clearly."
+  documentation_and_recordkeeping:
+    applicable: true
+    status: "planned"
+    notes: "Use case and review artifacts should be supported by clearer operational documentation."
+  human_oversight:
+    applicable: true
+    status: "partially_in_place"
+    notes: "Agent review is expected before responses are sent, but the quality of oversight should be validated."
+  transparency_and_communication:
+    applicable: true
+    status: "planned"
+    notes: "The communication approach for AI-assisted support interactions should be reviewed."
+  data_governance:
+    applicable: true
+    status: "unclear"
+    notes: "Customer data handling, retention, and data sensitivity require further review."
+  technical_robustness_and_reliability:
+    applicable: true
+    status: "planned"
+    notes: "Known output limitations and failure cases should be documented."
+  security_and_resilience:
+    applicable: true
+    status: "unclear"
+    notes: "Third-party dependencies and support-platform integration assumptions should be reviewed."
+  monitoring_and_review:
+    applicable: true
+    status: "planned"
+    notes: "Issue triggers and periodic review points should be defined before broader deployment."
+
+governance_decision:
+  decision_state: "requires_escalation"
+  rationale: "The use case is sufficiently clear for preliminary review, but the customer-facing context, customer data involvement, and potential impact on external communications make repository-level approval premature."
+  conditions: []
+  escalation_note: "Further review by relevant legal, privacy, compliance, security, or risk functions may be appropriate."
+  next_review_trigger: "Completion of escalation review and updated control assessment"
+
+references:
+  supporting_artifacts:
+    - "questionnaires/intake-questionnaire.md"
+    - "schema/use-case-registry.yaml"
+    - "schema/impact-assessment.yaml"
+    - "schema/classification.yaml"
+    - "schema/control-review.yaml"
+    - "rules/classification-rules.md"
+    - "rules/decision-rules.md"
+  notes: "Sample file for repository illustration only."
+
+versioning:
+  version: "0.1"
+  last_updated: ""

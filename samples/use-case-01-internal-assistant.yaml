@@ -1,0 +1,124 @@
+title: "Internal Knowledge Assistant"
+use_case_id: "use-case-01-internal-assistant"
+
+status:
+  value: "draft"
+  allowed_values:
+    - draft
+    - in_review
+    - completed
+
+owner:
+  name: "Knowledge Management Team"
+  business_function: "Internal Operations"
+
+summary:
+  short_description: "An internal AI assistant that helps employees retrieve information from approved internal knowledge sources and draft first-pass answers to routine internal questions."
+  intended_purpose: "Support internal staff by improving access to existing internal knowledge and reducing time spent on routine information retrieval."
+  outputs:
+    - "draft answers"
+    - "retrieved knowledge snippets"
+    - "suggested summaries"
+  output_usage: "Employees use the outputs as decision support or drafting support and are expected to review them before relying on them."
+
+deployment_context:
+  environment: "internal tool"
+  rollout_stage: "pilot"
+  geographies:
+    - "single geography"
+  intended_users:
+    - "employees"
+    - "internal support teams"
+  affected_persons_or_groups:
+    - "employees using the assistant"
+    - "internal teams relying on drafted outputs"
+
+data_and_dependencies:
+  data_sources:
+    - "approved internal documentation"
+    - "internal policies and procedures"
+    - "knowledge base content"
+  personal_data_involved: "unclear"
+  sensitive_data_involved: "unclear"
+  third_party_dependencies:
+    - "foundation model provider"
+    - "internal search or retrieval service"
+
+human_oversight:
+  human_review_expected: true
+  human_can_override_or_ignore_output: true
+  oversight_owner: "Knowledge Management Team"
+
+impact_assessment_summary:
+  expected_benefits:
+    - "faster access to internal information"
+    - "reduced time spent on repetitive internal questions"
+    - "better consistency in first-pass internal responses"
+  potential_harms:
+    - "incorrect or outdated information in responses"
+    - "overreliance on draft outputs"
+    - "insufficiently clear source context"
+  known_limitations:
+    - "outputs may be incomplete"
+    - "retrieved content may not reflect the latest document version"
+    - "responses require human review"
+
+preliminary_governance_classification:
+  value: "requires_further_review"
+  rationale: "The use case appears limited to internal support, but classification should remain preliminary until data sensitivity, dependency risks, and oversight assumptions are reviewed more fully."
+  ai_act_preliminary_view_note: "This is a preliminary governance classification only and not a formal legal classification under the EU AI Act."
+  escalation_recommended: false
+
+control_review_summary:
+  governance_and_accountability:
+    applicable: true
+    status: "planned"
+    notes: "Ownership is identified, but review roles should be documented more explicitly."
+  documentation_and_recordkeeping:
+    applicable: true
+    status: "planned"
+    notes: "Use case record exists, but supporting evidence should be expanded."
+  human_oversight:
+    applicable: true
+    status: "partially_in_place"
+    notes: "Human review is expected before reliance on outputs."
+  transparency_and_communication:
+    applicable: true
+    status: "planned"
+    notes: "Users should be reminded that outputs are draft support only."
+  data_governance:
+    applicable: true
+    status: "unclear"
+    notes: "Data categories and sensitivity need fuller confirmation."
+  technical_robustness_and_reliability:
+    applicable: true
+    status: "planned"
+    notes: "Known limitations should be documented and reviewed."
+  security_and_resilience:
+    applicable: true
+    status: "unclear"
+    notes: "Third-party dependency implications should be reviewed."
+  monitoring_and_review:
+    applicable: true
+    status: "planned"
+    notes: "Review triggers should be added before broader rollout."
+
+governance_decision:
+  decision_state: "deferred_pending_information"
+  rationale: "The use case is sufficiently clear to register and assess, but additional information is needed on data sensitivity, dependencies, and monitoring expectations before a stronger governance outcome is appropriate."
+  conditions: []
+  escalation_note: ""
+  next_review_trigger: "Completion of data and dependency review"
+
+references:
+  supporting_artifacts:
+    - "questionnaires/intake-questionnaire.md"
+    - "schema/use-case-registry.yaml"
+    - "schema/impact-assessment.yaml"
+    - "schema/classification.yaml"
+    - "schema/control-review.yaml"
+  notes: "Sample file for repository illustration only."
+
+versioning:
+  version: "0.1"
+  last_updated: ""

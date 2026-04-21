@@ -1,0 +1,126 @@
+title: "Document Summarization Assistant"
+use_case_id: "use-case-02-document-summarization"
+
+status:
+  value: "draft"
+  allowed_values:
+    - draft
+    - in_review
+    - completed
+
+owner:
+  name: "Knowledge Operations Team"
+  business_function: "Internal Operations"
+
+summary:
+  short_description: "An AI system that generates first-pass summaries of internal documents to help employees review long materials more efficiently."
+  intended_purpose: "Support internal staff by reducing the time needed to review lengthy documents and identify key points for further human review."
+  outputs:
+    - "document summaries"
+    - "key point extractions"
+    - "draft highlights"
+  output_usage: "Employees use the outputs as draft support only and are expected to check the underlying documents before relying on the summary."
+
+deployment_context:
+  environment: "internal tool"
+  rollout_stage: "pilot"
+  geographies:
+    - "single geography"
+  intended_users:
+    - "employees"
+    - "knowledge management staff"
+    - "operations teams"
+  affected_persons_or_groups:
+    - "employees using the summaries"
+    - "internal teams relying on summarized material"
+
+data_and_dependencies:
+  data_sources:
+    - "approved internal documents"
+    - "internal policies and procedures"
+    - "knowledge base documents"
+    - "uploaded internal files"
+  personal_data_involved: "unclear"
+  sensitive_data_involved: "unclear"
+  third_party_dependencies:
+    - "foundation model provider"
+    - "document processing service"
+
+human_oversight:
+  human_review_expected: true
+  human_can_override_or_ignore_output: true
+  oversight_owner: "Knowledge Operations Team"
+
+impact_assessment_summary:
+  expected_benefits:
+    - "faster review of long documents"
+    - "improved access to key information"
+    - "reduced time spent on first-pass reading"
+  potential_harms:
+    - "summaries may omit important details"
+    - "summaries may misstate meaning or context"
+    - "users may rely on summaries without checking source material"
+  known_limitations:
+    - "outputs may be incomplete"
+    - "summaries may flatten nuance or uncertainty"
+    - "quality depends on source document quality and clarity"
+
+preliminary_governance_classification:
+  value: "requires_further_review"
+  rationale: "The use case appears limited to internal support, but further review is needed to confirm document sensitivity, acceptable use boundaries, and whether existing oversight is sufficient."
+  ai_act_preliminary_view_note: "This is a preliminary governance classification only and not a formal legal classification under the EU AI Act."
+  escalation_recommended: false
+
+control_review_summary:
+  governance_and_accountability:
+    applicable: true
+    status: "planned"
+    notes: "Ownership is identified, but governance responsibilities should be recorded more explicitly."
+  documentation_and_recordkeeping:
+    applicable: true
+    status: "planned"
+    notes: "Use case and review artifacts exist, but supporting documentation should be expanded."
+  human_oversight:
+    applicable: true
+    status: "partially_in_place"
+    notes: "Human review is expected before summary outputs are relied on."
+  transparency_and_communication:
+    applicable: true
+    status: "planned"
+    notes: "Users should be reminded that summaries are draft support and not replacements for source review."
+  data_governance:
+    applicable: true
+    status: "unclear"
+    notes: "Document categories, retention expectations, and data sensitivity should be confirmed."
+  technical_robustness_and_reliability:
+    applicable: true
+    status: "planned"
+    notes: "Known limitations of summarization quality should be documented."
+  security_and_resilience:
+    applicable: true
+    status: "unclear"
+    notes: "Third-party processing and document handling assumptions should be reviewed."
+  monitoring_and_review:
+    applicable: true
+    status: "planned"
+    notes: "Review triggers should be defined before broader rollout."
+
+governance_decision:
+  decision_state: "deferred_pending_information"
+  rationale: "The use case is suitable for repository illustration, but additional information is needed on document sensitivity, data handling expectations, and monitoring approach before a stronger governance outcome is appropriate."
+  conditions: []
+  escalation_note: ""
+  next_review_trigger: "Completion of data handling and control review"
+
+references:
+  supporting_artifacts:
+    - "questionnaires/intake-questionnaire.md"
+    - "schema/use-case-registry.yaml"
+    - "schema/impact-assessment.yaml"
+    - "schema/classification.yaml"
+    - "schema/control-review.yaml"
+  notes: "Sample file for repository illustration only."
+
+versioning:
+  version: "0.1"
+  last_updated: ""
