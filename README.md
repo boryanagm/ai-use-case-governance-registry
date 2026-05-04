@@ -61,7 +61,11 @@ High-level components in the implementation:
 - governance-related metadata and documentation fields
 - periodic review and monitoring concept
 
-> A simple architecture or workflow diagram will be added here.
+<h2>Governance Workflow</h2>
+
+<p align="center">
+  <img src="assets/workflow-diagram.png" alt="AI Use-Case Governance Registry — Governance Workflow" width="1000">
+</p>
 
 ## Current Status
 
